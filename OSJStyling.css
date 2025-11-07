@@ -12,11 +12,11 @@ html {
     src: url(assets/fonts/Poppins-Bold.ttf);
 }
 
-
 @font-face {
     font-family: font;
     src: url(assets/fonts/BebasNeue-Regular.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -200,7 +200,6 @@ section.album_section::before {
     word-wrap: break-word;
     width: 350px;
     text-align: center;
-    
 }
 
 .albumabout p {
@@ -279,7 +278,6 @@ section.album_section::before {
     background-color: transparent;
     border:2px solid white;
     border-radius: 10px;
-    
 }
 
 .youtubebutton {
@@ -295,7 +293,6 @@ section.album_section::before {
     background-color: transparent;
     border:2px solid white;
     border-radius: 10px;
-    
 }
 
 .spotifybutton:hover {
@@ -348,7 +345,6 @@ section.popularsongs {
     color: white;
 }
 
-
 .bgheading {
     color: white;
     position: absolute;
@@ -381,7 +377,6 @@ section.popularsongs {
 .popularcol2 .streamplays {
     padding-top: 100px;
 }
-
 
 .popularline {
     background-color: white;
@@ -682,12 +677,7 @@ section.aboutjason video {
     border-radius: 10px;
 }
 
-
-
-
-
-
-/* Mosaic spans for first five videos */
+/* Custom Grid Layout on Grid */
 
 section.aboutjason video:nth-child(2) { grid-column: span 2; grid-row: span 1; }
 section.aboutjason video:nth-child(3) { grid-column: span 4; grid-row: span 2; }
@@ -697,6 +687,41 @@ section.aboutjason video:nth-child(6) { grid-column: span 4; grid-row: span 2; }
 section.aboutjason video:nth-child(7) { grid-column: span 1; grid-row: span 2; }
 section.aboutjason video:nth-child(8) { grid-column: span 5; grid-row: span 2; }
 section.aboutjason video:nth-child(9) { grid-column: span 1; grid-row: span 2; }
+
+/* animations */
+@keyframes positionanimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes leftpositionanimation {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightpositionanimation {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
 
 /* Responsiveness */
 @media (max-width: 1480px) {
@@ -742,50 +767,6 @@ section.aboutjason video:nth-child(9) { grid-column: span 1; grid-row: span 2; }
     padding: 1rem;
   }
 
-}
-
-/* animations */
-@keyframes positionanimation {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-@keyframes leftpositionanimation {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes rightpositionanimation {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-}
-
-@keyframes opacityanimation {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 @media (max-width: 980px) {
