@@ -1,6 +1,6 @@
-# JasonTheWeen Fanzine
+# JasonTheWeen Digital Fanzine
 
-A digital fanzine showcasing JasonTheWeen's music, albums, and history.
+A prototype of a digital fanzine showcasing JasonTheWeen's music, albums, and history.
 
 ## Features
 
